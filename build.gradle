@@ -9,6 +9,8 @@ sonar {
     properties {
         property "sonar.projectKey", "first-jenkins-sample"
         property "sonar.projectName", "first-jenkins-sample"
+        property "sonar.host.url", System.getenv("SONAR_HOST_URL")
+        property "sonar.login", System.getenv("SONAR_TOKEN")
     }
 }
 
